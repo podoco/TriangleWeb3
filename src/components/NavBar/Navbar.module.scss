@@ -1,0 +1,244 @@
+.navWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--blackBrown);
+  height: 90px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 640;
+}
+
+.navigationbar {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  .link {
+    color: var(--beige);
+    text-decoration: none; // 밑줄 제거
+    &:hover,
+    &:active {
+    }
+  }
+  .active {
+    color: var(--beige);
+    position: relative;
+  }
+  .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--beige);
+    width: 100%;
+    height: 2px;
+  }
+  @media (max-width: 450px) {
+    // padding: 20px 240px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.navigationbar .link {
+  position: relative;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+.navigationbar .link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--beige);
+  width: 0%;
+  height: 2px;
+  transition:
+    width 0.2s ease,
+    left 0.2s ease;
+}
+.navigationbar .link:hover::before {
+  width: 100%;
+}
+.login {
+  color: rgb(0, 0, 0); /// 링크의 색상 설정
+  text-decoration: none; // 밑줄 제거
+  font-size: 12px;
+  font-weight: 500;
+}
+.signup {
+  color: rgb(182, 181, 181); // 링크의 색상 설정
+  text-decoration: none; // 밑줄 제거
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.logo {
+  width: 200px;
+  height: 120px;
+  object-fit: contain;
+}
+.botlogo {
+  width: 180px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.separator {
+  margin: 0 5px; // 구분선 양옆의 여백
+  color: #5a5a5a; // 구분선 색상
+  font-size: 12px;
+}
+.logout {
+  border: none;
+  color: #5a5a5a;
+  background-color: white;
+}
+
+.dash {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(223, 220, 220);
+}
+
+.searchWrapper {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+// 인풋
+.inputContainer {
+  width: 50%;
+  position: relative;
+  display: inline-flex;
+}
+
+.searchIcon {
+  position: absolute; /* 절대 위치 설정 */
+  right: 15px; /* 아이콘의 왼쪽과 인풋 사이 여백 조정 */
+  top: 50%; /* 수직 가운데 정렬을 위해 50% 위치로 이동 */
+  transform: translateY(-50%); /* 수직 가운데 정렬 */
+  color: rgb(82, 81, 81); /* 아이콘의 색상 설정 */
+  cursor: pointer; /* 마우스 포인터 스타일 변경 (선택 사항) */
+  font-size: 24px;
+}
+
+.question {
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 2px 10px;
+  color: #229ef9;
+  border: 1.5px solid #229ef9;
+  background-color: white;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 20px;
+}
+.question:hover {
+  background-color: #229ef9;
+  color: #fff;
+}
+
+.blueBorderInput {
+  width: 100vw;
+  height: 50px;
+  border: 1.5px solid rgb(57, 180, 199); /* 파란색 테두리 설정 */
+  padding-left: 30px; /* 왼쪽 패딩을 아이콘의 너비만큼 추가 */
+  font-size: 16px;
+  border-radius: 30px;
+  font-family: inherit;
+}
+.blueBorderInput::placeholder {
+  color: rgb(146, 144, 144);
+}
+
+.iconWrapper {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+}
+.noDeco {
+  text-decoration: none;
+}
+.whiteBox {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 1s;
+  justify-content: center;
+}
+.whiteBox:hover p {
+  color: #229ef9;
+}
+
+.whiteBox p {
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  color: black; /// 링크의 색상 설정
+}
+
+.icon {
+  // width: 130px;
+  // height: 80px;
+  object-fit: contain;
+}
+.whiteBox:hover .icon {
+  width: 50px;
+}
+.dataicon {
+  width: 140px;
+  height: 110px;
+  object-fit: contain;
+}
+.dataSetWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 120px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 10px;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 50px;
+  justify-content: space-between;
+}
+.column p {
+  font-size: 17px;
+  font-weight: 600;
+}
+.column span {
+  color: #229ef9;
+  font-size: 20px;
+}

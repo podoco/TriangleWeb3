@@ -7,6 +7,10 @@ export const colorPalette = css`
     --green: #4caf50;
     --white: #fff;
     --black: #212121;
+    --blackBrown: #000000;
+    --beige: #fdfde1;
+    --brightGreen: #bff747;
+    --lightBlack: #0c0c0c;
     --grey: #9e9e9e;
   }
 `
@@ -17,6 +21,10 @@ export const colors = {
   green: 'var(--green)',
   white: 'var(--white)',
   black: 'var(--black)',
+  blackBrown: 'var(--blackBrown)',
+  beige: 'var(--beige)',
+  brightGreen: 'var(--brightGreen)',
+  lightBlack: 'var(--lightBlack)',
   grey: 'var(--grey)',
 }
 
