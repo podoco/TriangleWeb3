@@ -11,6 +11,9 @@
   box-sizing: border-box;
   font-size: 20px;
   font-weight: 640;
+  position: fixed; /* 상단 고정 */
+  top: 0; /* 상단에 위치 */
+  z-index: 1000; /* 다른 요소보다 위에 배치 */
 }
 
 .navigationbar {

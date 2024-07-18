@@ -1,0 +1,29 @@
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 200px;
+  height: 300px;
+  background-color: var(--blackBrown);
+}
+
+@media screen and (max-width: 768px) {
+  .logoWrapper p {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+  .explain {
+    width: 600px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .logoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+  }
+}

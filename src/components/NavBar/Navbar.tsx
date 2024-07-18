@@ -45,7 +45,6 @@ function Navbar() {
           </div>
         </nav>
       </div>
-      {/* <div className={styles.dash}></div> */}
     </>
   )
 }

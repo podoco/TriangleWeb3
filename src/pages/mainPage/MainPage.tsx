@@ -2,13 +2,17 @@ import React from 'react'
 import styles from './MainPage.module.scss'
 import '../../styles/colorPalette.ts'
 import bigstar from '../../images/bigSixStar.png'
+import middlestar from '../../images/mSixStar.png'
 import Text from '../../components/shared/Text'
 import mainPic from '../../images/mainPic.png'
 import user1 from '../../images/user1.png'
 import user2 from '../../images/user2.png'
 import user3 from '../../images/user3.png'
 import bookBtn from '../../images/bookBtn.png'
+import IconB from '../../images/IconB.png'
+import arrow from '../../images/arrow.svg'
 import circleArrow from '../../images/circleArrow.png'
+import Box from '@/components/shared/Box'
 function MainPage() {
   return (
     <>
@@ -50,7 +54,6 @@ function MainPage() {
                   Believed by more than a thousand people
                 </Text>
               </div>
-
               <div className={styles.row}>
                 <button>
                   <img className={styles.bookBtn} alt="pic" src={bookBtn} />
@@ -64,6 +67,27 @@ function MainPage() {
             </div>
             <div className={styles.pic}>
               <img className={styles.mainPic} alt="pic" src={mainPic} />
+            </div>
+          </div>
+        </div>
+        <div className={styles.solution}>
+          <div className={styles.mfont}>
+            <Text typography="h2" display="block" color="blackBrown">
+              <span>
+                We provide effective
+                <br />
+                design solutions
+                <img className={styles.logo} alt="logo" src={middlestar} />
+              </span>
+            </Text>
+          </div>
+          <div className={styles.boxWrapper}>
+            <div className={styles.box}>
+              <Box
+                logo={IconB}
+                title={'UI/UX Design'}
+                description="Focusing on user interface (UI) and user experience (UX) design enhance the usability and accessibility of digital products & app."
+              />
             </div>
           </div>
         </div>

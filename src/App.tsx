@@ -10,13 +10,17 @@ import Navbar from './components/NavBar/Navbar'
 import Footer from './components/Footer/Footer'
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<MainPage />}></Route>
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="app">
+      <Router>
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<MainPage />}></Route>
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </div>
   )
 }
 
