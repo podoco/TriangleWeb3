@@ -38,13 +38,12 @@
 .pic {
   overflow: hidden;
 }
-
 .mainPic {
   width: 90%;
   height: auto;
   border: 5px solid var(--beige);
   border-radius: 12px;
-  transition: transform 0.5s ease;
+  transition: transform 0.6s ease;
 }
 .pic:hover .mainPic {
   transform: scale(0.97); /* 이미지를 1.2배 확대 */
