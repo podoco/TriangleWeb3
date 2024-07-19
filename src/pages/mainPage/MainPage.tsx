@@ -11,10 +11,9 @@ import user3 from '../../images/user3.png'
 import bookBtn from '../../images/bookBtn.png'
 import IconB from '../../images/IconB.png'
 import IconC from '../../images/IconC.png'
-import IconE from '../../images/IconD.png'
+import IconE from '../../images/IconE.png'
 import IconF from '../../images/IconF.png'
 import videoImg from '../../images/vedioPost.png'
-import arrow from '../../images/arrow.svg'
 import circleArrow from '../../images/circleArrow.png'
 import Box from '@/components/shared/Box'
 
@@ -242,6 +241,7 @@ function MainPage() {
             </div>
           </div>
         </section>
+        <section className={styles.projects}></section>
       </div>
     </>
   )

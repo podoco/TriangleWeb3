@@ -94,7 +94,7 @@
   flex-direction: column;
   background-color: var(--whiteBeige);
   padding-top: 125px;
-  padding: 0 600px;
+  padding: 0 600px 130px 600px;
 }
 .mfont {
   display: flex;
@@ -182,6 +182,16 @@
   font-size: 2rem;
   color: var(--brightGreen);
 }
+
+.projects {
+  display: flex;
+  width: 100vw;
+  height: 600px;
+  flex-direction: column;
+  background-color: var(--blackBrown);
+  padding-top: 125px;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .box > div {
