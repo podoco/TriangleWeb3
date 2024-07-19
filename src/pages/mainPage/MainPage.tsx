@@ -33,7 +33,6 @@ function MainPage() {
       const timer = setInterval(() => {
         current += increment
         element.innerHTML = current.toString()
-
         if (current === end) {
           clearInterval(timer)
         }
