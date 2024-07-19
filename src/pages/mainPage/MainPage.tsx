@@ -50,7 +50,7 @@ function MainPage() {
   return (
     <>
       <div className={styles.wrapper}>
-        <div className={styles.mainTop}>
+        <section className={styles.mainTop}>
           <div className={styles.intro}>
             <div className={styles.font}>
               <Text typography="h1" display="block" color="beige">
@@ -102,8 +102,8 @@ function MainPage() {
               <img className={styles.mainPic} alt="pic" src={mainPic} />
             </div>
           </div>
-        </div>
-        <div className={styles.solution}>
+        </section>
+        <section className={styles.solution}>
           <div className={styles.mfont}>
             <Text typography="h3" display="block" color="blackBrown">
               <span>
@@ -242,7 +242,7 @@ function MainPage() {
               </Text>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   )

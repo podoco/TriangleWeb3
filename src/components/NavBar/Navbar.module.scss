@@ -26,9 +26,6 @@
   .link {
     color: var(--beige);
     text-decoration: none; // 밑줄 제거
-    &:hover,
-    &:active {
-    }
   }
   .active {
     color: var(--beige);
