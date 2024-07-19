@@ -1,0 +1,26 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--blackBrown);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  gap: 20px;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--brightGreen);
+    box-shadow: 2px 2px 2px 2px rgb(8, 8, 8);
+  }
+}
+
+.logo {
+  width: 100px;
+}
+
+.arrow {
+  width: 40px;
+}

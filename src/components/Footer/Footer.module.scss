@@ -1,9 +1,52 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 130px 500px 10px 500px;
+  box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
   margin-top: 200px;
-  height: 300px;
+  margin-top: 800px;
+  bottom: 0;
   background-color: var(--blackBrown);
+}
+
+.text {
+  margin: 50px 0;
+}
+
+.logo {
+  margin-left: 0.2em;
+}
+.link {
+  width: 70px;
+  z-index: 1;
+  border: 2px solid var(--beige);
+  border-radius: 50%;
+}
+
+.marginbottom {
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.dash {
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px 0px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.1rem solid var(--darkgrey); /* 원하는 색상으로 변경 */
+  width: 100%; /* 원하는 너비로 변경 */
+  margin-top: 40px; /* 상하 마진을 추가하여 밑줄과 다른 요소 사이에 공간을 만듦 */
 }
 
 @media screen and (max-width: 768px) {

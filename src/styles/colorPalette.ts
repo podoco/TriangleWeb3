@@ -13,6 +13,7 @@ export const colorPalette = css`
     --brightGreen: #bff747;
     --lightBlack: #0c0c0c;
     --grey: #9e9e9e;
+    --darkgrey: #999;
   }
 `
 
@@ -28,6 +29,7 @@ export const colors = {
   brightGreen: 'var(--brightGreen)',
   lightBlack: 'var(--lightBlack)',
   grey: 'var(--grey)',
+  darkgrey: 'var(--darkgrey)',
 }
 
 export type Colors = keyof typeof colors

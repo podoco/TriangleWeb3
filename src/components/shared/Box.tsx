@@ -13,13 +13,13 @@ function Box({ logo, title, description }: IconTextComponentProps) {
   return (
     <div className={styles.box}>
       <img className={styles.logo} alt="logo" src={logo} />
-      <Text typography="t1" display="block" color="blackBrown">
+      <Text typography="t1Bold" display="block" color="blackBrown">
         {title}
       </Text>
       <Text typography="t3" display="block" color="blackBrown">
         {description}
       </Text>
-      <img className={styles.logo} alt="arrow" src={arrow} />
+      <img className={styles.arrow} alt="arrow" src={arrow} />
     </div>
   )
 }
