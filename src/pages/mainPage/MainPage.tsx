@@ -15,7 +15,6 @@ import bookBtn from '../../images/bookBtn.png'
 import IconB from '../../images/IconB.png'
 import IconC from '../../images/IconC.png'
 import IconE from '../../images/IconD.png'
-import IconF from '../../images/IconF.png'
 import team1 from '../../images/team1.png'
 import team2 from '../../images/team2.png'
 import team3 from '../../images/team3.png'
@@ -176,7 +175,7 @@ function MainPage() {
                 description="FDesigning and developing websites to ensure they are visually look and appealing, user-friendly, and functional your website."
               />
               <Box
-                logo={IconF}
+                logo={IconE}
                 title={'Web Design'}
                 description="Creating animate graphics, videos for various purposes, including marketing and entertainment. To help sell a product or service."
               />
