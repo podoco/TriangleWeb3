@@ -3,18 +3,19 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 .mainTop {
   display: flex;
-  height: 600px;
-  box-sizing: content-box;
+  height: 900px;
+  box-sizing: border-box;
   background-color: var(--blackBrown);
-  padding: 130px 0px;
+  padding: 200px 80px 50px 80px;
 }
 .intro {
   display: flex;
   width: 1440px;
-  gap: 50px;
+  gap: 40px;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -39,7 +40,7 @@
   overflow: hidden;
 }
 .mainPic {
-  width: 90%;
+  width: 95%;
   height: auto;
   border: 5px solid var(--beige);
   border-radius: 12px;
@@ -94,7 +95,7 @@
   flex-direction: column;
   background-color: var(--whiteBeige);
   padding-top: 125px;
-  padding: 0 600px 130px 600px;
+  padding: 0 100px 130px 100px;
 }
 .mfont {
   display: flex;
@@ -136,8 +137,20 @@
   border-bottom: 0.1rem solid var(--darkgrey);
   justify-content: space-between;
 }
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 100px;
+  padding-bottom: 100px;
+  justify-content: space-between;
+}
 
 .box > div {
+  flex: 1 1 45%; /* Basis 45% with flex grow and shrink */
+  margin: 10px; /* Margin for spacing between boxes */
+}
+.box2 > div {
   flex: 1 1 45%; /* Basis 45% with flex grow and shrink */
   margin: 10px; /* Margin for spacing between boxes */
 }
@@ -186,15 +199,180 @@
 .projects {
   display: flex;
   width: 100vw;
-  height: 600px;
+  height: 850px;
   flex-direction: column;
   background-color: var(--blackBrown);
-  padding-top: 125px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.slidefont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slideWrapper {
+  width: 93%;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .box > div {
-    flex: 1 1 100%; /* Basis 100% for single column layout */
+.process {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #fffff5;
+}
+
+.processbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: 0 100px;
+  padding-top: 100px;
+  gap: 70px;
+  box-sizing: border-box;
+}
+.dashs {
+  width: 100%;
+  padding: 0 100px;
+  border: 0.05rem solid rgb(232, 230, 230);
+}
+.processbox .item3 {
+  flex: 5.5;
+  height: 450px;
+}
+.protitle {
+  margin-bottom: 20px;
+}
+.item4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Pbox {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  font-size: 32px;
+  padding: 24px;
+  background: white;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: 2px solid var(--blackBrown);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Pbox.active {
+  background-color: var(--brightGreen);
+}
+
+.down {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease,
+    padding 0.3s ease;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.content.expanded {
+  max-height: 500px; /* 충분히 큰 값으로 설정 */
+  padding: 10px 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviewTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.marquee {
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: var(--blackBrown);
+  position: relative;
+  color: var(--brightGreen);
+  font-size: 38px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee_content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
   }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.logo {
+  animation: rotate 2s linear infinite;
+  margin: 0 0.5em; /* 로고 주변의 공백 조정 */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rowBox {
+  display: flex;
+  flex-direction: row;
+  padding: 0 100px;
+}
+.colBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.team {
+  width: 90%;
+  border-radius: 20px;
+  border: 4px solid var(--blackBrown);
+}
+.teamName {
+  font-weight: 800;
+  font-size: 30px;
 }
